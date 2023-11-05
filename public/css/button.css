@@ -1,0 +1,44 @@
+.btn {
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    gap: 5px;
+    & p {
+        color: white;
+    }
+}
+
+.btn--feedback {
+    max-width: 90px;
+}
+
+.btn--upload {
+    display: flex;
+}
+
+.btn--send {
+    margin-top: 20px;
+}
+
+.btn--clear {
+    background-color: transparent;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.btn--toggle {
+    display: flex;
+}
+
+.container--upload {
+    display: flex;
+    justify-content: flex-end;
+}

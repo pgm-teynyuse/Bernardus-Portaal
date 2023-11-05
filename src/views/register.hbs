@@ -1,0 +1,91 @@
+<div class="page_title">
+    <h1>Register</h1>
+</div>
+<section class="auth-container register container">
+        {{>form-errors this}}
+    <form method="post" action="register" class="">
+        <div class="card--register">
+            <div class="register--info">
+                <div class="info_left">
+                    <div>
+                        <label for="lastname">Achternaam:</label>
+                        <input type="text" name="lastname" id="" value="" required>
+                    </div>
+                    <div>
+                        <label for="country">Geboorteland:</label>
+                        <input type="text" name="country" id="" value="" required>
+                    </div>
+                    <div>
+                        <label for="gender">Geslacht:</label>
+                        <select name="gender" id="gender" required>
+                            <option value="">-- Selecteer geslacht --</option>
+                            <option value="M">M</option>
+                            <option value="F">F</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="address">Adres:</label>
+                        <input type="text" name="address" id="" value="" required>
+                    </div>
+                </div>
+                <div class="info_middle">
+                    <div>
+                        <label for="firstname">Voornaam:</label>
+                        <input type="text" name="firstname" id="" value="" required>
+                    </div>
+                    <div>
+                        <label for="dob">Geboortedatum:</label>
+                        <input type="date" name="age" id="" required>
+                    </div>
+                    <div>
+                        <label for="phone">GSM-nummer:</label>
+                        <input type="tel" name="phone" id="" value="" required>
+                    </div>
+                    <div>
+                        <label for="city">Stad:</label>
+                        <input type="text" name="city" id="" value="" required>
+                    </div>
+                </div>
+                <div class="info_right">
+                    <div>
+                        <label for="numberInput">Leerling niveau:</label>
+                        <input type="number" name="level"  max="3" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="text" name="email" id="email" placeholder="voorbeeld@bernardus.be" required>
+                    </div>
+                    <div>
+                        <label for="username">Gebruikersnaam:</label>
+                        <input type="text" name="username" id="" value="" required>
+                    </div>
+                    <div>
+                        <label for="password">Wachtwoord:</label>
+                        <input type="password" name="password" id="" value="" required>
+                    </div>
+                    <div class="input-roles">
+                        <label for="roles">Authorisation</label>
+                        <select name="role" id="role">
+                            {{#each roles}}
+                            <option value="{{ id }}">{{ label }}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                    <div>
+                        <label for="subject">Leerkracht Vak:</label>
+                        <select name="subject" id="subject" required>
+                            <option value="">-- Selecteer vak --</option>
+                            {{#each subjects}}
+                            <option value="{{ id }}">{{ name }}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <input type="reset" class="btn btn--clear" value="Clear">
+            <input type="submit" class="btn" value="Register">
+        </div>
+    </form>
+</section>

@@ -1,0 +1,194 @@
+.dashboard {
+    margin: 20px;
+}
+
+.profile_user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+    & .image_of_user{
+        width: 3.6rem;
+        & img{
+            border-radius: 50%;
+        }
+    }
+    & .user_info_profile{
+        margin-left: 1rem;
+    & p:nth-child(2){
+        color: grey;
+    }
+    }
+}
+
+/* Stijl voor de profielkaart */
+.profile-card {
+    margin-top: 7rem;
+    width: 40rem;
+    height: 35rem;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: .5rem;
+    box-shadow: 0 .12rem .25rem hsla(0, 0%, 0%, 0.1);
+    padding: 2rem;
+}
+
+.profile-card .profile-image {
+    background-color: var(--blue);
+    text-align: center;
+    overflow: hidden;
+    border-radius: .5rem;
+    height: 10rem;
+    width: 10rem 
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left_side{
+    margin-right: 10rem;
+}
+
+.profile-image{
+    position: relative;
+    top: -7rem;
+}
+
+.profile-image img{
+    width: 15rem;
+}
+
+.container-adminUpdate{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button-6 {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin-top: 1rem;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+
+    &:hover {
+        border: 0.1rem dashed rgba(28, 6, 140, 0.996);
+        color: rgba(28, 6, 140, 0.996);
+        border-radius: .35rem;
+    }
+
+    &:hover {
+        transform: translateY(-1px);
+    }
+}
+
+.dashboard_users {
+    overflow: auto;
+    max-height: 38rem;
+}
+
+.dashboard_users::-webkit-scrollbar,
+.dashboard_users::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+.users_list{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    
+.upload-form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    width: 25rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 7rem;
+    box-shadow: 0 0.12rem 0.25rem hsla(0, 0%, 0%, 0.1);
+    & h3{
+        margin-bottom: 1rem;
+    }
+}
+
+.upload-input {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+
+.upload-file-label {
+  margin-bottom: 10px;
+}
+
+.addSubject{
+    margin: 1rem;
+}
+
+.edit_subjects{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin: 1rem;
+}
+
+.edit_subject{
+    background-color: white;
+    box-shadow: 0 0.12rem 0.25rem hsla(0, 0%, 0%, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.edit_subject_img{
+    margin-bottom: 1rem;
+}
+
+
+.subject_input{
+    margin-bottom: 1rem;
+}
+
+.upload-form-subject{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin-top: 1rem;
+}
+
+.upload-input-subject{
+    display: inline-block;
+    color: #333;
+    font-size: 10px;
+}

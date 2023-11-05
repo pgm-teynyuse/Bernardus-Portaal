@@ -1,0 +1,15 @@
+{{> up-nav}}
+<div class="page_title">
+  <h1>Feedback</h1>
+</div>
+
+<div class="feedback-list">
+
+  <ul class="feedback-list" >
+    {{#each feedbackData}}
+      <li>
+          {{> feedback-student}}
+      </li>
+    {{/each}}
+  </ul>
+</div>

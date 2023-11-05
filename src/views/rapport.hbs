@@ -1,0 +1,33 @@
+<div class="page_title rapport_page">
+    <h1>Rapport</h1>
+</div>
+
+<article class="raport_article">
+    <section class="section_result">
+    <ul class="rapport">
+        {{#each userPoints}}
+        <a href="/subjects/{{subjects.id}}">
+        <div class="documenten-text">
+            <div>
+                <p class="point_color" id="point">{{point}}/20</p>
+            </div>
+            <p class="comm_colo">{{comment}}</p>
+            <p class="comm_colo">{{subjects.name}}</p>
+        </div>
+        </a>
+        {{/each}}
+    </ul>
+    </section>
+    <section class="section_result">
+        <div class="info_rapport">
+            <div><p>Leerling: {{user.firstname}} {{user.lastname}}</p>
+                <p>Level:{{user.level}}</p>
+                <p>Klas: {{className.name}}</p>
+                <p>Titularis:</p>
+                <p>Feedback:</p>
+            </div>
+            <div class="gemiddelde"></div>
+        </div>
+    </section>
+</article>
+

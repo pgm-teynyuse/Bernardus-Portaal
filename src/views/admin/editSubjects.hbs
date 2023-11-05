@@ -1,0 +1,18 @@
+<div class="page_title">
+    <h1>Vakken Wijzigen:</h1>
+</div>
+    <div class="button_new_subject">{{> post-subject}}</div>
+<div class="dashboard_users">
+<section class="addSubject">
+<ul class="edit_subjects">
+    {{#each subject}}
+    <li class="upload_folder" id="{{id}}">
+    {{> edit-subject}}
+    </li>
+    {{/each}}
+</ul>
+</section>
+</div>
+
+
+
